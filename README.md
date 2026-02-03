@@ -2,6 +2,8 @@
 
 A set of bash scripts for managing, reporting on, and force-revoking irrevocable leases in [HashiCorp Vault](https://www.vaultproject.io/). Irrevocable leases occur when Vault is unable to revoke a lease (e.g., due to backend connectivity issues or plugin errors), and they can accumulate over time if left unaddressed.
 
+!PLEASE USE WITH CAUTION AS ONCE LEASE GOT FORCE REVOKED IT CANNOT BE RECOVERED!
+
 ## Background
 
 When Vault cannot successfully revoke a lease, it marks the lease as **irrevocable**. These leases remain in Vault's storage and can:
