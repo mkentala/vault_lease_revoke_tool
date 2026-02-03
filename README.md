@@ -4,6 +4,9 @@ A high-performance, parallelized CLI tool for managing, reporting on, and force-
 
 ## Background 
 When Vault cannot successfully revoke a lease, it marks the lease as irrevocable. These leases remain in Vault's storage and can:
+!PLEASE USE WITH CAUTION AS ONCE LEASE GOT FORCE REVOKED IT CANNOT BE RECOVERED!
+
+## Background
 
 Consume storage and memory resources
 - Cause confusion when auditing active credentials
